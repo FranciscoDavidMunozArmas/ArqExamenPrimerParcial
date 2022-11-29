@@ -1,6 +1,5 @@
 package ec.edu.espe.examenprimerparcial.tes.service;
 
-import java.math.BigDecimal;
 import java.util.List;
 
 import ec.edu.espe.examenprimerparcial.tes.model.TesCategoriaInstrumento;

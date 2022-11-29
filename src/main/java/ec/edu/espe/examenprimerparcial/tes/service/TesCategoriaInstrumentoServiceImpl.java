@@ -1,6 +1,5 @@
 package ec.edu.espe.examenprimerparcial.tes.service;
 
-import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -10,7 +9,6 @@ import org.springframework.stereotype.Service;
 import ec.edu.espe.examenprimerparcial.tes.model.TesCategoriaInstrumento;
 import ec.edu.espe.examenprimerparcial.tes.model.TesCategoriaInstrumentoPK;
 import ec.edu.espe.examenprimerparcial.tes.repository.TesCategoriaInstrumentoRepository;
-import ec.edu.espe.examenprimerparcial.tes.repository.TesTipoInstrumentoRepository;
 
 @Service
 public class TesCategoriaInstrumentoServiceImpl implements TesCategoriaInstrumentoService {
