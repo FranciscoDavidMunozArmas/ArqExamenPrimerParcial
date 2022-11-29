@@ -9,6 +9,8 @@ public interface GenEmpresaService {
 
     GenEmpresa findByCode(Integer codEmpresa);
 
+    List<GenEmpresa> findByName(String name);
+
     GenEmpresa create(GenEmpresa genEmpresa);
 
     GenEmpresa update(GenEmpresa genEmpresa, Integer codEmpresa);

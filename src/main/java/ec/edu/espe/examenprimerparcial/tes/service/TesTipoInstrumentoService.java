@@ -8,7 +8,7 @@ import ec.edu.espe.examenprimerparcial.tes.model.TesTipoInstrumentoPK;
 public interface TesTipoInstrumentoService {
     List<TesTipoInstrumento> findAll();
 
-    TesTipoInstrumento findByCodEmpresa(Integer codEmpresa);
+    List<TesTipoInstrumento> findByCodEmpresa(Integer codEmpresa);
 
     TesTipoInstrumento findByCodTipoInstrumento(String codTipoInstrumento);
 
@@ -16,6 +16,5 @@ public interface TesTipoInstrumentoService {
 
     TesTipoInstrumento update(TesTipoInstrumento tesTipoInstrumento, TesTipoInstrumentoPK tesTipoInstrumentoPK);
 
-    void deleteByCodEmpresa(Integer codEmpresa);
-    void deleteByCodTipoInstrumento(String codTipoInstrumento);
+    void delete(TesTipoInstrumentoPK tesTipoInstrumentoPK);
 }

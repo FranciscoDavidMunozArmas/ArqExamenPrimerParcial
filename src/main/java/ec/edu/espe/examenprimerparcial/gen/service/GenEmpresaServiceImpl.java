@@ -40,4 +40,9 @@ public class GenEmpresaServiceImpl implements GenEmpresaService {
         this.repository.deleteById(codEmpresa);
     }
 
+    @Override
+    public List<GenEmpresa> findByName(String name) {
+        return this.repository.findByNombre(name);
+    }
+
 }

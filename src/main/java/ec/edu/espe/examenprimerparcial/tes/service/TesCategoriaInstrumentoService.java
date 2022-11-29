@@ -1,5 +1,6 @@
 package ec.edu.espe.examenprimerparcial.tes.service;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 import ec.edu.espe.examenprimerparcial.tes.model.TesCategoriaInstrumento;
@@ -7,6 +8,8 @@ import ec.edu.espe.examenprimerparcial.tes.model.TesCategoriaInstrumentoPK;
 
 public interface TesCategoriaInstrumentoService {
     List<TesCategoriaInstrumento> findAll();
+
+    List<TesCategoriaInstrumento> findAllRent(Integer rentValue);
 
     TesCategoriaInstrumento findByCodEmpresa(Integer codEmpresa);
 
@@ -17,7 +20,5 @@ public interface TesCategoriaInstrumentoService {
     TesCategoriaInstrumento update(TesCategoriaInstrumento tesCategoriaInstrumento,
             TesCategoriaInstrumentoPK tesCategoriaInstrumentoPK);
 
-    void deleteByCodEmpresa(Integer codEmpresa);
-
-    void deleteByCodCategoriaInstrumento(Integer codCategoriaInstrumento);
+    void delete(TesCategoriaInstrumentoPK tesCategoriaInstrumentoPK);
 }
